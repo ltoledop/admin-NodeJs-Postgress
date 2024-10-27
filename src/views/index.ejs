@@ -1,0 +1,16 @@
+<!-- src/views/index.ejs -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos de Usuario</title>
+</head>
+<body>
+    <h1>Datos de Usuarios</h1>
+    <ul>
+        <% data.forEach(usuario => { %>
+            <li><%= usuario.username %> - <%= usuario.email %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
